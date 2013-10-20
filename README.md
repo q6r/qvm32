@@ -3,6 +3,7 @@ qvm32
 
 This is a very basic and badly written crackme running in a virtual machine that follows a simple design.
 Four general registers r[1-4], rs, ri. A stack, no heap. A list of instructions:
+```
 RET   = 0x11, // opcode
 CALL  = 0x22, // opcode
 MOV   = 0x33, // mov reg, reg|imm
@@ -16,6 +17,7 @@ MOVP  = 0xaa, // movp reg, imm
 AND   = 0xbb, // and reg, reg|imm
 ADD   = 0xcc, // add reg, reg|imm
 XORP  = 0xdd  // xorp reg, reg|imm
+```
 badly implemented :) this was written in a very short time for a crackme challenge many of the instructions were
 not implemented well or used by the byte codes interrupted in the application. Anyway, have fun. The byte code of
 the crackme translates to something like
